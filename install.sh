@@ -14,8 +14,8 @@ if [[ -e /usr/local/bin/h2o ]]; then
 fi
 
 echo -e "${YELLOW}Install requirements for build h2o from apt-get.${RESET}"
-apt-get -qq update
-apt-get -qq install -y build-essential zlib1g-dev cmake curl
+sudo apt-get -qq update
+sudo apt-get -qq install -y build-essential zlib1g-dev cmake curl
 echo -e "${GREEN}done.${RESET}"
 
 echo -e "${YELLOW}Download source code tarball from github.${RESET}"
