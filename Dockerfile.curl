@@ -1,0 +1,5 @@
+FROM ubuntu:18.04
+RUN apt-get update && \
+    apt-get install -y curl
+
+RUN curl -sS https://raw.githubusercontent.com/cross-ts/ubuntu-h2o/master/install.sh | bash
